@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.BoardMapper">
+
+    <sql id ="search">
+        <where>
+            <if test="keyword != null">
+                <foreach collection="types" item="item" separator="OR" open="(" close=")">
+                    <if test='item == "t"'>
+                        title like concat ('%',#{keyword},'%')
+                    </if>
+                    <if test='item =="c"'>
+                        content like concat('%',#{keyword},'%')
+                    </if>
+                    <if test='item =="w"'>
+                        writer like concat('%',#{keyword},'%')
+                    </if>
+                </foreach>
+            </if>
+        </where>
+    </sql>
+
+    <insert id="insert">
+        <selectKey resultType="int" keyProperty="bno" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into table_name(title , content , writer)
+        value(#{title},#{content},#{writer})
+    </insert>
+
+    <select id="selectList" resultType="com.domain.Board">
+        select bno, title , content ,writer,regDate,updateDate
+        from table_name
+        <include refid="search"></include>
+        order by bno desc
+        limit #{skip},#{size}
+    </select>
+
+    <delete id="delete">
+        delete from table_name where bno = #{bno}
+    </delete>
+
+    <select id="selectOne" resultType="com.domain.Board">
+        select * from table_name where bno = #{bno}
+    </select>
+
+    <update id="update">
+        update table_name set title = #{title} , content = #{content} , updateDate = now() where bno = #{bno}
+    </update>
+
+    <select id="getTotal" resultType="int">
+        select count (bno) from table_name
+        <include refid="search"></include>
+    </select>
+</mapper>

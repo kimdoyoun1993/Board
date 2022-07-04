@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mapper.BoardMapperTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-01T10:27:16" hostname="LAPTOP-FRC5UJUP" time="0.38">
+  <properties/>
+  <testcase name="testInsert()" classname="com.mapper.BoardMapperTests" time="0.38"/>
+  <system-out><![CDATA[07:27:15  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+07:27:15  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a4c638d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@13e698c7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@aed0151, org.springframework.test.context.support.DirtiesContextTestExecutionListener@267bbe1a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f12e153, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@389562d6, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a101b1c]
+07:27:16  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+07:27:16  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@767a014e
+07:27:16  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목0(String), 내용0(String), user0(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 22
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목1(String), 내용1(String), user1(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 23
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목2(String), 내용2(String), user2(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 24
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목3(String), 내용3(String), user3(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 25
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목4(String), 내용4(String), user4(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 26
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목5(String), 내용5(String), user5(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 27
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목6(String), 내용6(String), user6(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 28
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목7(String), 내용7(String), user7(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 29
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목8(String), 내용8(String), user8(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 30
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목9(String), 내용9(String), user9(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 31
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목10(String), 내용10(String), user10(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 32
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목11(String), 내용11(String), user11(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 33
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목12(String), 내용12(String), user12(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 34
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목13(String), 내용13(String), user13(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 35
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목14(String), 내용14(String), user14(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 36
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목15(String), 내용15(String), user15(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 37
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목16(String), 내용16(String), user16(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 38
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목17(String), 내용17(String), user17(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 39
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목18(String), 내용18(String), user18(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 40
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목19(String), 내용19(String), user19(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 41
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목20(String), 내용20(String), user20(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 42
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목21(String), 내용21(String), user21(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 43
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목22(String), 내용22(String), user22(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 44
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목23(String), 내용23(String), user23(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 45
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목24(String), 내용24(String), user24(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 46
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목25(String), 내용25(String), user25(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 47
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목26(String), 내용26(String), user26(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 48
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목27(String), 내용27(String), user27(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 49
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목28(String), 내용28(String), user28(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 50
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목29(String), 내용29(String), user29(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 51
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목30(String), 내용30(String), user30(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 52
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목31(String), 내용31(String), user31(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 53
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목32(String), 내용32(String), user32(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 54
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목33(String), 내용33(String), user33(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 55
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목34(String), 내용34(String), user34(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 56
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목35(String), 내용35(String), user35(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 57
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목36(String), 내용36(String), user36(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 58
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목37(String), 내용37(String), user37(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 59
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목38(String), 내용38(String), user38(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 60
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목39(String), 내용39(String), user39(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 61
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목40(String), 내용40(String), user40(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 62
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목41(String), 내용41(String), user41(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 63
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목42(String), 내용42(String), user42(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 64
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목43(String), 내용43(String), user43(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 65
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목44(String), 내용44(String), user44(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 66
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목45(String), 내용45(String), user45(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 67
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목46(String), 내용46(String), user46(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 68
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목47(String), 내용47(String), user47(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 69
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목48(String), 내용48(String), user48(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 70
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==>  Preparing: insert into table_name(title , content , writer) value(?,?,?)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] ==> Parameters: 제목49(String), 내용49(String), user49(String)
+07:27:16 DEBUG [com.mapper.BoardMapper.insert] <==    Updates: 1
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==>  Preparing: select last_insert_id()
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] ==> Parameters: 
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==    Columns: last_insert_id()
+07:27:16 TRACE [com.mapper.BoardMapper.insert!selectKey] <==        Row: 71
+07:27:16 DEBUG [com.mapper.BoardMapper.insert!selectKey] <==      Total: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
