@@ -14,8 +14,8 @@ ext {
     junitVersion = '5.8.1'
 }
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+sourceCompatibility = "1.9"
+targetCompatibility = "1.9"
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -70,6 +70,15 @@ dependencies {
     //jstl
     // https://mvnrepository.com/artifact/jstl/jstl
     implementation 'jstl:jstl:1.2'
+
+
+    //Jackson Databind
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.2.2'
+
+    //Jackson Datatype: JSR310
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.2'
 }
 
 test {

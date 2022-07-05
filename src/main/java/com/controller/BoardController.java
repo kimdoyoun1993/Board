@@ -40,6 +40,8 @@ public class BoardController {
 
         log.info(listDTO);
 
+        model.addAttribute("dto",boardService.getOne(bno));
+
         return "/board/read";
     }
 
