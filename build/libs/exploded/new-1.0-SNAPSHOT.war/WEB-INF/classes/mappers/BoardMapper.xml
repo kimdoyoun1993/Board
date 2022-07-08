@@ -55,4 +55,8 @@
         select count (bno) from table_name
         <include refid="search"></include>
     </select>
+
+    <update id="updateReplyCount">
+        update table_name set replyCount = replyCount + #{amount} where bno = #{bno}
+    </update>
 </mapper>

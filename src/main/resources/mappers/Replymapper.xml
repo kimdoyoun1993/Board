@@ -6,7 +6,7 @@
 <mapper namespace="com.mapper.ReplyMapper">
 
     <select id="selectListOfBoard" resultType="com.domain.Reply">
-        select * from  table_reply where bno = #{bno} order by rno asc
+        select * from  tbl_reply where bno = #{bno} and rno > 0 order by rno asc
     </select>
 
     <insert id="insert">
