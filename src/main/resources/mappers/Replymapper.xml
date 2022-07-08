@@ -8,4 +8,10 @@
     <select id="selectListOfBoard" resultType="com.domain.Reply">
         select * from  table_reply where bno = #{bno} order by rno asc
     </select>
+
+    <insert id="insert">
+        insert into table_reply (bno , replyText , replyer)
+        values (#{bno} , #{replyText} , #{replyer})
+    </insert>
+
 </mapper>
