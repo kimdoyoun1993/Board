@@ -32,7 +32,7 @@
     </insert>
 
     <select id="selectList" resultType="com.domain.Board">
-        select bno, title , content ,writer,regDate,updateDate
+        select bno, title , content ,writer,regDate,updateDate,replyCount
         from table_name
         <include refid="search"></include>
         order by bno desc

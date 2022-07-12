@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.136s</div>
+<div class="counter">0.129s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">testInsert()</td>
-<td class="success">0.136s</td>
+<td class="success">0.129s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,22 +87,22 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:48:03  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-08:48:03  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e28bb87, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@19f040ba, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@72ab05ed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27e32fe4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c3c4c1c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17d238b1, org.springframework.test.context.event.EventPublishingTestExecutionListener@3d7cc3cb]
-08:48:04  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-08:48:04  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@414f13fc
-08:48:04  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-08:48:04  INFO [com.aop.LogAdvice] ------------------
-08:48:04  INFO [com.aop.LogAdvice] ------------------
-08:48:04  INFO [com.aop.LogAdvice] [ReplyDTO(rno=null, bno=65, replyText=테스트 댓글, replyer=user00, regDate=null, updateDate=null)]
-08:48:04  INFO [com.aop.LogAdvice] ------------------
-08:48:04  INFO [com.aop.LogAdvice] ------------------
-08:48:04 DEBUG [com.mapper.ReplyMapper.insert] ==&gt;  Preparing: insert into table_reply (bno , replyText , replyer) values (? , ? , ?)
-08:48:04 DEBUG [com.mapper.ReplyMapper.insert] ==&gt; Parameters: 65(Integer), 테스트 댓글(String), user00(String)
-08:48:04 DEBUG [com.mapper.ReplyMapper.insert] &lt;==    Updates: 1
-08:48:04 DEBUG [com.mapper.BoardMapper.updateReplyCount] ==&gt;  Preparing: update table_name set replyCount = replyCount + ? where bno = ?
-08:48:04 DEBUG [com.mapper.BoardMapper.updateReplyCount] ==&gt; Parameters: 1(Integer), 65(Integer)
-08:48:04 DEBUG [com.mapper.BoardMapper.updateReplyCount] &lt;==    Updates: 1
+<pre>03:25:59  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+03:25:59  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e28bb87, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@19f040ba, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@72ab05ed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27e32fe4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c3c4c1c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17d238b1, org.springframework.test.context.event.EventPublishingTestExecutionListener@3d7cc3cb]
+03:26:00  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+03:26:00  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@414f13fc
+03:26:00  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+03:26:00  INFO [com.aop.LogAdvice] ------------------
+03:26:00  INFO [com.aop.LogAdvice] ------------------
+03:26:00  INFO [com.aop.LogAdvice] [ReplyDTO(rno=null, bno=67, replyText=테스트 댓글, replyer=user00, regDate=null, updateDate=null)]
+03:26:00  INFO [com.aop.LogAdvice] ------------------
+03:26:00  INFO [com.aop.LogAdvice] ------------------
+03:26:00 DEBUG [com.mapper.ReplyMapper.insert] ==&gt;  Preparing: insert into table_reply (bno , replyText , replyer) values (? , ? , ?)
+03:26:00 DEBUG [com.mapper.ReplyMapper.insert] ==&gt; Parameters: 67(Integer), 테스트 댓글(String), user00(String)
+03:26:00 DEBUG [com.mapper.ReplyMapper.insert] &lt;==    Updates: 1
+03:26:00 DEBUG [com.mapper.BoardMapper.updateReplyCount] ==&gt;  Preparing: update table_name set replyCount = replyCount + ? where bno = ?
+03:26:00 DEBUG [com.mapper.BoardMapper.updateReplyCount] ==&gt; Parameters: 1(Integer), 67(Integer)
+03:26:00 DEBUG [com.mapper.BoardMapper.updateReplyCount] &lt;==    Updates: 1
 </pre>
 </span>
 </div>
@@ -114,7 +114,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.3.3</a> at 2022. 7. 8. 오후 8:48:05</p>
+<a href="http://www.gradle.org">Gradle 7.3.3</a> at 2022. 7. 12. 오후 3:26:00</p>
 </div>
 </div>
 </body>

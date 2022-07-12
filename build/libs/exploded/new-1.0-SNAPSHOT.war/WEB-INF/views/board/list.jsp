@@ -32,7 +32,10 @@
     <c:forEach items="${dtoList}" var="board">
         <li>
             <span>${board.bno}</span>
-            <span><a href ='/board/read/${board.bno}' class="dtoLink"><c:out value = "${board.title}"/></a></span>
+            <span><a href ='/board/read/${board.bno}' class="dtoLink">
+                <c:out value = "${board.title}"/></a>
+                [<c:out value="${board.replyCount}"/>]
+            </span>
 
         </li>
 

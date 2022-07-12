@@ -24,6 +24,8 @@ public class ReplyController {
         log.info("=====================");
         log.info(replyDTO);
 
+        replyService.register(replyDTO);
+
         return Map.of("result",135);
     }
 

@@ -21,7 +21,7 @@ public class ReplyServiceTests {
 
         ReplyDTO replyDTO = new ReplyDTO();
 
-        replyDTO.setBno(65);
+        replyDTO.setBno(67);
         replyDTO.setReplyText("테스트 댓글");
         replyDTO.setReplyer("user00");
 
